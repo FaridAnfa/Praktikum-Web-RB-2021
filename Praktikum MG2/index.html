@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum MG2</title>
+</head>
+<style>
+    
+
+.container {
+    width: 1200px;
+    margin: auto;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px -6px 22px 0px rgb(0 0 0 / 20%);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+
+h1 {
+    margin: 15px;
+}
+
+nav{
+	background: #07bd59;
+	display: flex;
+	justify-content: right;
+}
+nav a{
+	color: black;
+	font-size: 14pt;
+	padding: 10px 30px;
+	text-decoration: none;
+}
+nav a:hover{
+	background: #4169E1;
+	color: white;
+}
+
+
+span {
+    margin-right: 50px;
+}
+
+span a {
+    background: antiquewhite;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+}
+
+span a:hover {
+    background:#efc166
+}
+
+content {
+    display: flex;
+    margin: 20px 0px;
+}
+
+.main {
+    width: 70%;
+}
+
+.news {
+    width: 30%;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+table.tab-main {
+    margin: auto;
+    width: 655px;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    margin: 25px;
+}
+</style>
+<body>
+    
+    <div class="container">
+		<header>
+			<img src="logo-itera-oke.jpg" width="100" height="140">
+			<h1>
+                <p style="color: rgb(184, 134, 11);" >Institut</p>
+                <p style="color: rgb(184, 134, 11);">Teknologi Sumatera</p>
+            </h1>
+		</header>
+		<nav>
+			<a href="#">Home</a>
+		    <a href="#">Preference</a>
+		    <a href="#">Contact</a>
+		    <a href="#">About</a>
+		    <a href="#" style="margin-right: 100px;">FAQ</a>
+		</nav>
+		<hr>
+		<content>
+			<div class="main">
+				<h2>Biodata Diri</h2>
+				<table class="tab-main">
+                    <tr>
+                        <td rowspan="10" width="230px"><img src="poto.jpeg"  width="140" height="180"></td> 
+                    </tr>
+					<tr>
+						<td width="200px">Nama </td>
+						<td width="20px">:</td>
+						<td width="500px">Farid Anfasha Nurhalim</td>
+					</tr>
+					<tr>
+						<td>NIM </td>
+						<td>:</td>
+						<td>119140215</td>
+					</tr>
+                    <tr>
+                        <td>Tempat/Tanggal Lahir</td>
+                        <td>:</td>
+                        <td>Padang Panjang/17 April 2001</td>
+                    </tr>
+					<tr>
+						<td>Prodi</td>
+                        <td>:</td>
+						<td>Teknik Informatika</td>
+					</tr>
+					<tr>
+						<td>Mata Kuliah</td>
+                        <td>:</td>
+						<td>Pemrograman Web</td>
+					</tr>
+					<tr>
+						<td>Kelas</td>
+                        <td>:</td>
+						<td>RB</td>
+					</tr>
+                    <tr>
+                        <td>Alamat</td>
+                        <td>:</td>
+                        <td>Jl.Senopati Raya, Gg Rawa Tengah, Sukarame Bandar Lampung</td>
+                    </tr>
+				</table>
+			</div>
+			<div class="news">
+				<h2>Portal Berita</h2>
+				<div class="content-news">
+					<ul>
+						<li><a href="https://www.detik.com/">Detik.com</a></li>
+						<li><a href="https://www.kompas.com/">kompas.com</a></li>
+						<li><a href="https://kumparan.com/">Kumparan.com</a></li>
+					</ul>
+				</div>
+			</div>
+		</content>
+		<hr>
+		<footer>
+			<p><small>Copyright &copy; By FaridAnfasha[119140215]</small></p>
+		</footer>
+		<hr>
+	</div>
+</body>
+</html>
