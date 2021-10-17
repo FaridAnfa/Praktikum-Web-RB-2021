@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum MG 3</title>
+</head>
+<body>
+    <div class="tema">
+        <label>Pilih Tema</label>
+        <select onchange="pilihTema(value)">
+                <option value="light">☀️</option>
+                <option value="dark">🌙</option>
+        </select>
+    </div>
+    <h2 class="tema">Hello there, This is my Web</h2>
+    <div class="tema">
+        <label>Keyword</label>
+        <select onchange="pilihMerk(value)">
+            <option value="samsung">Samsung</option>
+            <option value="apple">Apple</option>
+            <option value="xiaomi">Xiaomi</option>
+        </select>
+    </div>
+    <p class="tema" id="merk">Samsung merupakan sebuah konglomerat multinasional yang berkantor pusat di Samsung Town, Seoul, Korea Selatan. Perusahaan ini memiliki sejumlah anak usaha yang mayoritas berbisnis dengan merek Samsung, dan perusahaan ini merupakan chaebol terbesar di Korea Selatan.</p>
+	<div class="tema">
+        <h4>Faktorial</h4>
+		<label>Input Angka : </label>
+		<input type="number" name="" id="input">
+		<button onclick="faktorial()">Cek Faktorial</button>
+		<p id="faktorial"></p>
+    </div>
+    <script type="text/javascript">
+		function pilihTema(value) {
+			var tema = document.getElementsByClassName("tema")
+
+			if (value == "light") {
+				for (let i = 0; i < tema.length; i++) {
+					tema[i].style.color='black'
+				}
+				document.body.style.background = 'white'
+			} else{
+				for (let i = 0; i < tema.length; i++) {
+					tema[i].style.color='white'
+				}
+				document.body.style.background = 'black'
+			}
+		}
+
+        function pilihMerk(value) {
+			var merk = document.getElementById("merk")
+			if (value == "samsung") {
+				merk.innerHTML = "Samsung merupakan sebuah konglomerat multinasional yang berkantor pusat di Samsung Town, Seoul, Korea Selatan. Perusahaan ini memiliki sejumlah anak usaha yang mayoritas berbisnis dengan merek Samsung, dan perusahaan ini merupakan chaebol terbesar di Korea Selatan."
+			}else if (value == "apple") {
+				merk.innerHTML = "Apple Inc. adalah perusahaan teknologi multinasional yang berpusat di Cupertino, California, yang merancang, mengembangkan, dan menjual barang elektronik konsumen, perangkat lunak komputer, dan layanan daring. Perangkat keras yang diproduksi Apple meliputi telepon pintar iPhone, komputer tablet iPad, komputer pribadi Mac, pemutar media portabel iPod, jam pintar Apple Watch, pemutar media digital Apple TV, dan pengeras suara pintar HomePod."
+			}else {
+				merk.innerHTML = "Xiaomi Inc. adalah perusahaan elektronik swasta dari Tiongkok yang berkantor pusat di Beijing. Didirikan pada tahun 2010, perusahaan ini dengan cepat telah menjadi salah satu perusahaan teknologi terkemuka di dunia. Pada awal kuartal kedua tahun 2018, Xiaomi merupakan produsen telepon cerdas terbesar ke-4 di Dunia yang merancang, mengembangkan, dan menjual telepon cerdas, aplikasi seluler, dan elektronik konsumen."
+			}
+		}
+
+        function faktorial() {
+		    var input = document.getElementById("input").value
+		    var hasil = input
+		    console.log(input)
+
+		    for (let i = hasil - 1; i > 0; i--) {
+		        hasil *= i
+		    }
+
+		    var faktorial = document.getElementById("faktorial")
+		    faktorial.innerHTML = `Hasil Faktorial Dari ${input} Adalah ${hasil}`
+		}
+	</script>
+
+
+</body>
+</html>
